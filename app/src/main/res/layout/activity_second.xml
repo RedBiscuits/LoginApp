@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_image"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome you are logged in "
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/greeting"
+        android:textColor="@color/white"
+        android:layout_margin="25dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/name"
+        android:textSize="25dp"
+        android:text="name"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/google_picture"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/email"
+        android:textSize="20dp"
+        android:text="name"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"></TextView>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/greeting"
+        android:id="@+id/google_picture"
+        ></ImageView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:id="@+id/signout_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="26dp"></Button>
+</RelativeLayout>
